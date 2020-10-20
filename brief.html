@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head>
+  <meta charset="UTF-8">
+  <title>Szybka wycena</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/multiform.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+  <script src="assets/js/modernizr.custom.25376.js"></script>
+</head>
+<body>
+	<div id="perspective" class="perspective effect-moveleft">
+			
+		<div class="container">
+			<div class="wrapper">
+				<header class="navmenu">
+					<a href="index.html" class="logo navfix1">
+						Future Web
+					</a>
+					<button class="hamburger brfix" id="showMenu">
+						<span class="burger burger2"></span>
+					</button>
+				</header>
+				<form id="msform" action="send_form_brief.php" method="post">
+					<ul id="progressbar">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+					</ul>
+					<!-- fieldsets -->
+					<fieldset class="mainfield">
+				<!----------------------------------- PIERWSZA STRONA--------------------------------------->
+					<h2 class="fs-title">Dane kontaktowe</h2>
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<label>Imię i nazwisko</label>
+							<input type="text" name="nazwaf" tabindex="1" required>
+						</div>
+						<div class="col-md-6">
+							<label>Adres email</label>
+							<input type="text" name="osobak" tabindex="2" required>
+						</div>
+						<div class="col-md-6">
+							<label>Numer telefonu</label>
+							<input type="text" name="phone" tabindex="3" required>
+						</div>
+						<div class="col-md-6">
+							<label>Nazwa firmy</label>
+							<input type="text" name="email" tabindex="4" required>
+						</div>
+					</div>
+						<br>
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+				<!----------------------------------- DRUGA STRONA--------------------------------------->
+					<fieldset>
+					<h2 class="fs-title">Informacje ogólne</h2>
+					<h3 class="fs-subtitle">Przykładowy tekst</h3>
+					<div class="row no-gutters">
+
+						<div class="col-md-4">
+							<label>Opisz swoją działalność</label>
+							<textarea name="message" tabindex="8" required></textarea>
+						</div>
+						<div class="col-md-4">
+							<label>Co wyróżnia Twoją firmę ?</label>
+							<textarea name="cowyr" tabindex="9" required></textarea>
+						</div>
+						<div class="col-md-4">
+							<label>Dlaczego chcesz miec nową srtronę internetową ?</label>
+							<textarea name="nowastr" tabindex="10" required></textarea>
+						</div>
+			
+					</div>
+					<br>
+					
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- TRZECIA STRONA--------------------------------------->
+
+
+					<fieldset>
+						<h2 class="fs-title">Dane techniczne</h2>
+						<h3 class="fs-subtitle">What have been your main achievements?</h3>
+						<label>Czy posiadasz domenę ?</label><br>
+						<label>
+						  <input type="radio" name="domena" value="Tak"> Tak
+						</label><br>
+						<label>
+						  <input type="radio" name="domena" value="Nie"> Nie
+						</label><br>
+						<label>Czy posiadasz hosting ?</label><br>
+						<label>
+						  <input type="radio" name="hosting" value="Tak"> Tak
+						</label><br>
+						<label>
+						  <input type="radio" name="hosting" value="Nie"> Nie
+						</label>
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- CZWARTA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">Identyfikacja marki</h2>
+						<h3 class="fs-subtitle">What do you consider your main weaknesses to be?</h3>
+						<p class="brheading">Identyfikacja marki</p><br>
+
+			
+						  <label>Jaki jest slogan / motto firmy ?</label>
+						  <textarea name="slogan" tabindex="11" required></textarea>
+			
+						  <label>Wymień ważne słowa które mają być kojarzone z marką</label>
+						  <textarea name="waznesl" tabindex="12" required></textarea>
+		
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+				</fieldset>
+<!----------------------------------- PIĄTA STRONA--------------------------------------->
+				<fieldset>
+						<h2 class="fs-title">Preferencje projektowe</h2>
+						<h3 class="fs-subtitle">What do your colleagues consider your main weaknesses to be?</h3>
+						
+                        <div class="row no-gutters">
+							<div class="col-md-4">
+								<label>Czy masz wybrane czcionki ? Jeśli tak napisz jakie</label>
+								<textarea name="czcionki" tabindex="13" required></textarea>
+							</div>
+							<div class="col-md-4">
+								<label>Czy sa jakies kolory które chcesz uwzglednic ?</label>
+							<textarea name="kolory" tabindex="14" required></textarea>
+							</div>
+							<div class="col-md-4">
+							<label>Czego nie lubisz na innych stronach ?</label>
+							<textarea name="nielubie" tabindex="15" required></textarea>
+							</div>
+						</div>
+
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- SZÓSTA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">Opisy i grafika na stronę</h2>
+						<h3 class="fs-subtitle">In what areas would you like to improve your clinical skills?</h3>
+	
+							<label>Czy posiadasz logo w wysokiej rozdzielczości ?</label><br>
+							<label>
+							  <input type="radio" name="logo" value="Tak"> Tak
+							</label><br>
+							<label>
+							  <input type="radio" name="logo" value="Nie"> Nie
+							</label>
+		
+							<label>Czy posiadasz zdjęcia / obrazy w wysokiej rozdzielczości ?</label><br>
+							<label>
+							  <input type="radio" name="zdjecia" value="Tak"> Tak
+							</label><br>
+							<label>
+							  <input type="radio" name="zdjecia" value="Nie"> Nie
+							</label>
+			
+				  
+							<label>Czy posiadasz opisy i teksty ?</label><br>
+							<label>
+							  <input type="radio" name="opisy" value="Tak"> Tak
+							</label><br>
+							<label>
+							  <input type="radio" name="opisy" value="Nie"> Nie
+							</label>
+				
+				  
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- SIÓDMA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">QFunkcje które chcesz mieć na stronie</h2>
+						<h3 class="fs-subtitle">In what areas would you like to improve your non-clinical skills?</h3>
+				
+					
+							<label></label><br>
+				  
+							<label>
+							  <input type="checkbox" name="sklep" value="Sklep"> Sklep
+							</label><br>
+							<label>
+							  <input type="checkbox" name="blog" value="Blog"> Blog
+							</label><br>
+							<label>
+							  <input type="checkbox" name="galeria" value="Galeria"> Galeria
+							</label><br>
+							<label>
+							  <input type="checkbox" name="formularz" value="Formularz"> Formularz
+							</label><br>
+							<label>
+							  <input type="checkbox" name="slider" value="Slider"> Slider
+							</label><br>
+							<label>
+							  <input type="checkbox" name="wyszukiwanie" value="Wyszukiwanie"> Wyszukiwanie
+							</label>
+				
+				  
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- ÓSMA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">Z jakimi mediami ma być zintegrowana</h2>
+						<h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to complete?</h3>
+
+							<label></label><br>
+							<label>
+							  <input type="checkbox" name="facebook" value="Facebook"> Facebook
+							</label><br>
+							<label>
+							  <input type="checkbox" name="insta" value="Instagram"> Instagram
+							</label><br>
+							<label>
+							  <input type="checkbox" name="twitter" value="Twitter"> Twitter
+							</label><br>
+							<label>
+							  <input type="checkbox" name="youtube" value="Youtube"> Youtube
+							</label><br>
+							<label>
+							  <input type="checkbox" name="tripad" value="Trip Advisor"> Trip Advisor
+							</label><br>
+							<label>
+							  <input type="checkbox" name="linked" value="Linkedln"> Linkedln
+							</label>
+
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- DZIEWIĄTA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">Question 9</h2>
+						<h3 class="fs-subtitle">What postgraduate qualifications do you hold?</h3>
+							<label>Czy potrzebujesz dodatkowych funkcji ?</label>
+							<textarea name="dodfunk" tabindex="16" required></textarea>
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+						<input type="button" name="next" class="next action-button" value="Next" />
+					</fieldset>
+<!----------------------------------- DZIESIĄTA STRONA--------------------------------------->
+					<fieldset>
+						<h2 class="fs-title">Question 10</h2>
+						<h3 class="fs-subtitle">What postgraduate qualifications or training do you wish to obtain?</h3>
+						
+
+							<label>Preferowany termin ukonczenia witryny</label><br>
+							<input type="date" name="data">
+				  
+		
+							<label>Czy możemy jeszcze w czymś pomóc?</label>
+							<textarea name="pomoc" tabindex="17" required></textarea>
+	
+				  
+							<button class="button1" name="submit" type="submit" id="contact-submit">Wyślij</button>
+							<div id="send_form_status"></div>
+					
+
+						<input type="button" name="previous" class="previous action-button" value="Previous" />
+			
+					</fieldset>
+				</form>
+
+			</div>
+		</div>
+
+		<nav class="outer-nav right vertical">
+			<a href="index.html" class="link">Główna</a>
+			<a href="#" class="">O mnie</a>
+			<a href="#" class="">Usługi</a>
+			<a href="portfolio.html" class="">Portfolio</a>
+			<a href="#" class="">Wycena</a>
+			<a href="#" class="">Kontakt</a>
+		</nav>
+	</div>
+
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" type="text/javascript"></script>
+<script src="assets/js/easings.js"></script>
+<script src="assets/js/classie.js"></script>
+		<script src="assets/js/menu.js"></script>
+</script>
+<!-- partial -->
+  <script  src="assets/js/multiform.js"></script>
+  <script>
+	$(document).ready(function() {
+	$("html").on("submit", "#msform", function(e) {
+	  e.preventDefault();
+	  $("#send_form_status").html('').hide();
+	  var data = $("#msform").serialize();
+	  $.post("/send_form_brief.php", data, function(res) {
+		$("#send_form_status").html(res.msg).show();
+		if (res.status == 1) {
+		  $("#msform")[0].reset();
+		}
+	  });
+	});
+  });
+  </script>
+
+</body>
+</html>
